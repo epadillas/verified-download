@@ -1,0 +1,9 @@
+{
+  "name": "verified-downlaod",
+  "title": "verified-download",
+  "id": "jid1-kB0Rz3KkPIAs9Q",
+  "description": "Verify the integrity of files downloaded via anchor tags",
+  "author": "http://github.com/epadillas",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
