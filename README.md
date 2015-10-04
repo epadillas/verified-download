@@ -1,6 +1,8 @@
 # verified-download
 Firefox extension that verifies the integrity of files downloaded via anchor tags
 
+Look at the demo here: http://epadillas.com/2015/10/01/On-insecure-software-distribution-practices.html#extension
+
 
 ### 1. Introduction
 One important characteristic of websites is that they act as a platform for downloading files. The integrity of those files needs to be verified in order to make sure that they weren't tampered with or corrupted in transfer. Currently, there's no standard method for securely allowing web-browser users to verify downloads.
@@ -43,6 +45,7 @@ Click to download
 
 #### 4. Suggested Web-Browser Behaviour
 To keep the web-browsers' User-Experience as unchanged as possible, it is suggested that an extra context-menu item is implemented, titled “Verified Download”, that will be shown when the end-user right-clicks a valid HTML anchor tag with a CHECKSUM attribute. If this new context-menu item is clicked, the web-browser will behave as stated in section 3.1 of this memo (“Integrity Verification Scenarios”). Visual feedback will let the user know if the verification was successful or not. If the verification failed, the reason for this failure must be shown.
+
 #### 5. Security Considerations
 The HTML document containing any anchor element with the CHECKSUM attribute must be served under HTTPS. Otherwise, an attacker could modify the attribute's value and a tampered file could be seen as authentic. Checksum algorithms known to be vulnerable to collisions must be avoided (e.g., MD5, SHA1SUM)
 
